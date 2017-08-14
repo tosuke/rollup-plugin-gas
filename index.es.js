@@ -1,12 +1,10 @@
 import gasEntryGenerator from 'gas-entry-generator';
 
-function gas(options) {
-  if ( options === void 0 ) options = {};
-
+function gas() {
   return {
     name: 'gas',
 
-    transformBunble: function transformBunble(code) {
+    transformBundle: function transformBundle(code) {
       return {
         code: gasify(code)
       }

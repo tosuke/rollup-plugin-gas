@@ -4,13 +4,11 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 
 var gasEntryGenerator = _interopDefault(require('gas-entry-generator'));
 
-function gas(options) {
-  if ( options === void 0 ) options = {};
-
+function gas() {
   return {
     name: 'gas',
 
-    transformBunble: function transformBunble(code) {
+    transformBundle: function transformBundle(code) {
       return {
         code: gasify(code)
       }

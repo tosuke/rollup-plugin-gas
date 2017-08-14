@@ -1,10 +1,10 @@
 import gasEntryGenerator from 'gas-entry-generator'
 
-export default function gas(options = {}) {
+export default function gas() {
   return {
     name: 'gas',
 
-    transformBunble(code) {
+    transformBundle(code) {
       return {
         code: gasify(code)
       }
