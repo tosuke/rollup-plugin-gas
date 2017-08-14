@@ -1,7 +1,7 @@
 {
   "name": "rollup-plugin-gas",
   "version": "1.0.0",
-  "description": "rollup plugin for google-apps-script(gas)",
+  "description": "Rollup Plugin for Google Apps Script(gas)",
   "main": "index.cjs.js",
   "jsnext:main": "index.es.js",
   "files": [
