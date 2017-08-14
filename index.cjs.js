@@ -20,8 +20,7 @@ function gas(options) {
 
 function gasify(src) {
   var entries = gasEntryGenerator(src);
-  return entries + src
+  return ("var global=this;" + entries + src)
 }
 
 module.exports = gas;
-//# sourceMappingURL=rollup-plugin-gas.cjs.js.map

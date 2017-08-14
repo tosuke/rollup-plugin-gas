@@ -14,5 +14,5 @@ export default function gas(options = {}) {
 
 function gasify(src) {
   const entries = gasEntryGenerator(src)
-  return entries + src
+  return `var global=this;${entries}${src}`
 }

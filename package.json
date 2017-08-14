@@ -2,28 +2,23 @@
   "name": "rollup-plugin-gas",
   "version": "1.0.0",
   "description": "rollup plugin for google-apps-script(gas)",
-
-  "main": "index.js",
-  "jsnext:main": "dest/rollup-plugin-gas.es.js",
+  "main": "index.cjs.js",
+  "jsnext:main": "index.es.js",
   "files": [
     "src",
-    "dist/rollup-plugin-gas.cjs.js",
-    "dist/rollup-plugin-gas.es.js"
+    "index.cjs.js",
+    "index.es.js"
   ],
   "keywords": [
     "rollup-plugin",
     "es2015",
     "google-apps-script"
   ],
-
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c"
   },
-
   "dependencies": {
-    "gas-entry-generator": "^1.0.1",
-    "rollup-pluginutils": "^2.0.1"
+    "gas-entry-generator": "^1.0.1"
   },
   "devDependencies": {
     "buble": "^0.15.2",
@@ -33,7 +28,6 @@
     "source-map": "^0.5.6",
     "source-map-support": "^0.4.15"
   },
-
   "author": "tosuke <tasukeprg@gmail.com> (https://github.com/Tosuke)",
   "license": "MIT",
   "repository": {

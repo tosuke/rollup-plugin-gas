@@ -9,8 +9,8 @@ export default {
   ],
   external,
   targets: [
-    { dest: 'dist/rollup-plugin-gas.cjs.js', format: 'cjs' },
-    { dest: 'dist/rollup-plugin-gas.es.js' , format: 'es'  },
+    { dest: 'index.cjs.js', format: 'cjs' },
+    { dest: 'index.es.js' , format: 'es'  },
   ],
-  sourceMap: true
+  sourceMap: false
 }
