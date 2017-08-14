@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "rollup plugin for google-apps-script(gas)",
 
-  "main": "dist/rollup-plugin-gas.cjs.js",
+  "main": "index.js",
   "jsnext:main": "dest/rollup-plugin-gas.es.js",
   "files": [
     "src",
